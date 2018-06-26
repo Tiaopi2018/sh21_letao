@@ -1,33 +1,33 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>乐淘商城</title>
+  <title>乐淘电商</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
   <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
   <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-<!-- 左侧侧边栏 -->
+<!--左侧侧边栏-->
 <div class="lt_aside">
   <div class="brand"><a href="#">黑马21期</a></div>
   <div class="user"><img src="./images/default.png" alt=""><p>超级管理员</p></div>
   <div class="nav">
     <ul>
-      <li><a class="icon_menu" href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+      <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
       <li>
-        <a class="category" href="#"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
-        <div class="child" style="display: block">
-          <a class="icon_menu current" href="first.html">一级分类</a>
-          <a class="icon_menu" href="second.html">二级分类</a>
+        <a class="category" href="javascript:;"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
+        <div class="child" style="display: none">
+          <a href="first.html"><span>一级分类</span></a>
+          <a href="second.html"><span>二级分类</span></a>
         </div>
       </li>
-      <li><a class="icon_menu" href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+      <li><a class="current" href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
     </ul>
   </div>
 </div>
-<!-- 右边主体部分 -->
+<!--右边主体部分-->
 <div class="lt_main">
   <div class="lt_topbar">
     <a class="pull-left" href="javascript:;"><i class="glyphicon glyphicon-align-justify"></i></a>
@@ -36,17 +36,17 @@
   <div class="container-fluid">
     <ol class="breadcrumb">
       <li><a href="index.html">管理系统</a></li>
-      <li class="active">分类管理</li>
-      <li class="active">一级分类</li>
+      <li class="active">首页</li>
     </ol>
   </div>
 </div>
-<!-- 模态框部分 -->
+
+<!--模态框部分-->
 <div class="modal fade" tabindex="-1" id="myModal">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" ><span>&times;</span></button>
         <h4 class="modal-title">温馨提示</h4>
       </div>
       <div class="modal-body">
@@ -59,11 +59,11 @@
     </div>
   </div>
 </div>
+</body>
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
 <script src="./js/common.js"></script>
-</body>
 </html>

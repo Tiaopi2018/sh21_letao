@@ -17,6 +17,11 @@ if(location.href.indexOf('login.html') === -1) {
   })
 }
 
+NProgress.start();
+
+setTimeout(function() {
+  NProgress.done();
+},500)
 
 $(document).ajaxStart(function () {
   NProgress.start();
