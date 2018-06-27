@@ -36,14 +36,14 @@ $(function() {
   })
 
   $('.lt_topbar .pull-left').click(function() {
-    $('.lt_main').toggleClass()
-    $('.lt_topbar').toggleClass()
-    $('.lt_aside').toggleClass()
+    $('.lt_main').toggleClass('hidemenu')
+    $('.lt_topbar').toggleClass('hidemenu')
+    $('.lt_aside').toggleClass('hidemenu')
   })
   $('.lt_topbar .pull-right').click(function() {
     $('#myModal').modal('show')
   })
-  $('.btn-primary').click(function() {
+  $('.public .btn-primary').click(function() {
     $.ajax({
       type: 'get',
       url: '/employee/employeeLogout',

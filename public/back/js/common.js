@@ -47,7 +47,6 @@ $(function() {
   $('.lt_topbar .pull-right').click(function() {
     $('#myModal').modal('show')
   })
-  $('.modal-footer.public .btn-default')
   $('.modal-footer.public .btn-primary').click(function() {
     $.ajax({
       type: 'get',
