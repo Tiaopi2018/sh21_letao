@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>乐淘商城</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
+</head>
+<body>
+<!--整体容器-->
+<div class="lt_container">
+  <!--乐淘公共头部-->
+  <div class="lt_header">
+    <a class="header_left" href="index.html"><i class="fa fa-home"></i></a>
+    <h3>乐淘云购</h3>
+    <a class="header_right" href="#"><i class="fa fa-search"></i></a>
+  </div>
+  <!--乐淘内容区域-->
+  <div class="lt_main">
+    <!--左侧区域-->
+    <div class="lt_category_left">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <ul class="ul_left">
+            <!--填坑-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--右侧区域-->
+    <div class="lt_category_right">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <ul class="ul_right">
+            <!--填坑-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--乐淘底部区域-->
+  <div class="lt_footer">
+    <ul class="mui-clearfix">
+      <li><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
+      <li><a class="current" href="category.html"><i class="fa fa-bars"></i><span>分类页</span></a></li>
+      <li><a href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+      <li><a href="user.html"><i class="fa fa-user"></i><span>会员中心</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/category.js"></script>
+
+<script type="text/html" id="tmp">
+  {{ each rows v i }}
+    <li><a class="{{ i === 0 ? 'current' : ''}}" href="#" data-id="{{ v.id }}">{{ v.categoryName }}</a></li>
+  {{ /each }}
+</script>
+
+<script type="text/html" id="tpl">
+  {{ each rows v i }}
+      <li>
+        <a href="#">
+          <img src="{{ v.brandLogo }}" alt="">
+          <span>{{ v.brandName }}</span>
+        </a>
+      </li>
+  {{ /each }}
+</script>
+</body>
+</html>
