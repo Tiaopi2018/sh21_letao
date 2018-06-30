@@ -7,7 +7,7 @@ $(function() {
     url: '/category/queryTopCategory',
     dataType: 'json',
     success: function(info) {
-      console.log(info);
+      //console.log(info);
       var id = info.rows[0].id
       $('.ul_left').html(template('tmp', info))
       render(id)

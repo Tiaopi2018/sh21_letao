@@ -90,3 +90,48 @@ ul {
   background-color: #fff;
   position: relative;
 }
+
+
+.product {
+  padding: 10px;
+}
+.product li {
+  width: 48%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom:10px;
+}
+.product li:nth-child(2n+1) {
+  margin-right:4%;
+}
+.product li a img {
+  width: 100%;
+}
+.product li a .price {
+  color: red;
+}
+.product li a .old {
+  text-decoration: line-through;
+}
+
+
+.search {
+  padding: 10px;
+  position: relative;
+}
+.search .search_input{
+  height: 34px;
+  font-size: 12px;
+  border: 1px solid #89C2FF;
+  border-radius: 5px;
+  margin: 0;
+  box-shadow: 0 0 2px 1px #89C2FF;
+}
+.search .search_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0 5px 5px 0;
+}

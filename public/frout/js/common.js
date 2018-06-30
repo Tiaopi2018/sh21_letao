@@ -9,3 +9,15 @@ $(function() {
 
 
 })
+
+function getSearchObj() {
+  var str = decodeURI(location.search)
+  str = str.slice(1)
+  var arr = str.split('&')
+  var obj = {}
+  arr.forEach(function(v, i) {
+    var newArr = v.split('=')
+    obj [newArr[0]] = newArr[1]
+  })
+  return obj
+}
